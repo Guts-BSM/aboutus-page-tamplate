@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+body{
+    background: rgb(25, 25, 25);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    z-index: -1;
+}
+nav{
+    background: silver;
+    color: rgb(25, 25, 25);
+    display: inline-block;
+    width: 100%;
+}
+.hand{
+    padding: 0;
+    margin: 0;
+    transform: scaleX(-1);
+    width: 40vw;
+}
+.logo{
+    display: inline-flex;
+    padding: 0 0 0 15vw;
+    margin: 0;
+    width: 50%;
+    z-index: 1;
+}
+.logo-txt{
+    display: flex;
+    color: rgb(25, 25, 25);
+    font-size: 4rem;
+    margin: 0;
+    padding: 0 2vw;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.nave{
+    display: flex;
+    border-top: 5px solid rgb(25, 25, 25);
+    border-radius: 20px;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    width: 100%;
+}
+.nav-links{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1vw;
+    transition: all 0.3s;
+}
+.nav-links:hover{
+    color: purple;
+    scale: 1.2;
+    text-shadow: 1px 1px 3px purple;
+}
+.nav-links h3{
+    margin: 0;
+    padding: 0 0 1% 0;
+}
+.header-decoration{
+    background: rgb(25, 25, 25);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 0;
+    padding: 3vw;
+    width: 100%;
+}
+.container ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw 0;
+    padding: 0;
+    width: 100%;
+}
+.cards{
+    background-color: silver;
+    border: 2px solid silver;
+    border-radius: 15px;
+    width: 30%;
+}
+.cards img{
+    display: block;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.cards .overlay {
+    background-color: silver;
+    border-radius: 15px;
+    width: 100%;
+    height: 1%;
+    transition: all .5s ease;
+}
+.cards div {
+    border-radius: 15px;
+    color: rgb(25, 25, 25);
+    font-size: 20px;
+    text-align: center;
+    transform: translate(0%, -96%);
+
+  }
+.cards:hover .overlay {
+    height: 100%;
+}
+section{
+    background-color: silver;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    text-align: center;
+    padding: 5% 0;
+    margin: 0;
+    color: rgb(25, 25, 25);
+}
+.container {
+    flex-wrap: wrap;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    width: 100%;
+}
