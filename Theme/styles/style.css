@@ -10,7 +10,7 @@ body{
     width: 100%;
 }
 header{
-    z-index: -1;
+    position: relative;
 }
 nav{
     background: silver;
@@ -18,18 +18,16 @@ nav{
     display: inline-block;
     width: 100%;
 }
-.hand{
-    padding: 0;
-    margin: 0;
-    transform: scaleX(-1);
-    width: 40vw;
-}
 .logo{
-    display: inline-flex;
-    padding: 0 0 0 15vw;
     margin: 0;
-    width: 50%;
-    z-index: 1;
+    opacity: 0.5;
+    padding: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 0;
 }
 .logo-txt{
     display: flex;
@@ -37,6 +35,7 @@ nav{
     font-size: 4rem;
     margin: 0;
     padding: 0 2vw;
+    padding-top: 35%;
     width: 100%;
 }
 ul{
@@ -44,13 +43,15 @@ ul{
 }
 .nave{
     display: flex;
+    background-color: silver;
     border-top: 5px solid rgb(25, 25, 25);
-    border-radius: 20px;
-    justify-content: space-between;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    justify-content: space-evenly;
+    position: relative;
     margin: 0;
-    padding-right: 10vw;
-    padding-left: 10vw;
     width: 100%;
+    z-index: 1;
 }
 .nav-links{
     cursor: pointer;
@@ -78,7 +79,7 @@ ul{
 }
 .container ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 2vw 0;
     padding: 0;
     width: 100%;
@@ -87,6 +88,7 @@ ul{
     background-color: silver;
     border: 2px solid silver;
     border-radius: 15px;
+    flex-wrap: wrap;
     width: 30%;
 }
 .cards img{
@@ -97,22 +99,39 @@ ul{
     width: 100%;
 }
 .cards .overlay {
+    position: relative;
     background-color: silver;
     border-radius: 15px;
     width: 100%;
-    height: 1%;
+    height: 0%;
     transition: all .5s ease;
 }
 .cards div {
     border-radius: 15px;
     color: rgb(25, 25, 25);
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
-    transform: translate(0%, -96%);
+    overflow: hidden;
+    transform: translate(0%, -95%);
 
   }
+.cards p{
+    font-size: 1rem;
+    font-weight: normal;
+    height: 0;
+    margin: 0;
+    margin-top: 1vw;
+    padding: 0;
+}
 .cards:hover .overlay {
     height: 100%;
+    .cards p{
+        height: 100%;
+    }
+    .cards img{
+        height: 0;
+    }
 }
 section{
     background-color: silver;
@@ -124,7 +143,7 @@ section{
     color: rgb(25, 25, 25);
 }
 .container {
-    flex-wrap: wrap;
+    z-index: 1;
 }
 footer{
     background-color: black;
