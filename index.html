@@ -3,35 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Services - Modern API Solutions</title>
+    <meta name="description" content="Professional API services for modern applications. Fast, reliable, and scalable API solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Theme/styles/style.css">
-    <title>&#128142; HomePage</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="Theme/pics/logo.png" alt="" class="logo">
-            <h1 class="logo-txt">API Services</h1>
-            <ul class="nave">
-                <li class="nav-links"><h3 href="#">Home</h3></li>
-                <li class="nav-links"><h3 href="#">About</h3></li>
-                <li class="nav-links"><h3 href="#">Contact</h3></li>
-            </ul>
-            <div class="header-decoration"></div>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <img src="Theme/pics/logo.png" alt="API Services Logo" class="logo">
+                <span class="logo-txt">API Services</span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
-    <div class="container">
-        <ul>
-            <li class="cards" id="card1"><img src="Theme/pics/caeds.jpg" alt=""><div class="overlay">FirstOne <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde esse deleniti molestias quibusdam distinctio, amet laboriosam aspernatur praesentium voluptatem natus, libero tempore totam. Amet facilis atque aut totam, veritatis vitae?</p></div></li>
-            <li class="cards" id="card3"><img src="Theme/pics/caeds.jpg" alt=""><div class="overlay">SecondOne <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde esse deleniti molestias quibusdam distinctio, amet laboriosam aspernatur praesentium voluptatem natus, libero tempore totam. Amet facilis atque aut totam, veritatis vitae?</p></div></li>
-            <li class="cards" id="card2"><img src="Theme/pics/caeds.jpg" alt=""><div class="overlay">ThirdOne <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde esse deleniti molestias quibusdam distinctio, amet laboriosam aspernatur praesentium voluptatem natus, libero tempore totam. Amet facilis atque aut totam, veritatis vitae?</p></div></li>
-        </ul>
-        <section class="about-us">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore impedit ratione saepe dolores blanditiis, autem vero laudantium nostrum explicabo nulla? Asperiores tenetur nisi, officiis eligendi beatae quidem perferendis sapiente delectus.</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025, All rights reserved</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Next-Generation <span class="highlight">API Solutions</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Build faster, scale smarter with our enterprise-grade API services.
+                    Reliable, secure, and lightning-fast integrations for modern applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        Explore Services
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7"></path>
+                            <path d="M7 7h10v10"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500ms</span>
+                        <span class="stat-label">Avg Response</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10M+</span>
+                        <span class="stat-label">Requests/Day</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Sub-millisecond response times</p>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🔒</div>
+                        <h3>Enterprise Security</h3>
+                        <p>Bank-level encryption & compliance</p>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">📈</div>
+                        <h3>Auto Scaling</h3>
+                        <p>Handles millions of requests seamlessly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-bg">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Services</span></h2>
+                <p>Comprehensive API solutions designed for modern businesses</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>REST API Development</h3>
+                    <p>Custom RESTful APIs built with modern standards and best practices.</p>
+                    <ul class="service-features">
+                        <li>RESTful design principles</li>
+                        <li>JSON API responses</li>
+                        <li>Rate limiting & throttling</li>
+                        <li>Comprehensive documentation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>GraphQL APIs</h3>
+                    <p>Flexible and efficient GraphQL APIs for complex data requirements.</p>
+                    <ul class="service-features">
+                        <li>Schema-driven development</li>
+                        <li>Real-time subscriptions</li>
+                        <li>Introspective queries</li>
+                        <li>Optimized data fetching</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>API Integration</h3>
+                    <p>Seamlessly connect your systems with third-party APIs and services.</p>
+                    <ul class="service-features">
+                        <li>Webhook integrations</li>
+                        <li>OAuth 2.0 implementation</li>
+                        <li>Error handling & retries</li>
+                        <li>Monitoring & logging</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>API Analytics</h3>
+                    <p>Comprehensive analytics and monitoring for your API performance.</p>
+                    <ul class="service-features">
+                        <li>Real-time metrics</li>
+                        <li>Usage analytics</li>
+                        <li>Performance monitoring</li>
+                        <li>Error tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>API Security</h3>
+                    <p>Enterprise-grade security solutions to protect your APIs.</p>
+                    <ul class="service-features">
+                        <li>JWT authentication</li>
+                        <li>API key management</li>
+                        <li>Rate limiting</li>
+                        <li>Security audits</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>API Documentation</h3>
+                    <p>Professional documentation that developers love to use.</p>
+                    <ul class="service-features">
+                        <li>OpenAPI/Swagger specs</li>
+                        <li>Interactive documentation</li>
+                        <li>Code examples</li>
+                        <li>SDK generation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose <span class="highlight">API Services</span>?</h2>
+                    <p>
+                        We're a team of passionate API experts dedicated to building robust,
+                        scalable, and secure API solutions. With years of experience in the
+                        API space, we understand the challenges developers face and provide
+                        solutions that just work.
+                    </p>
+                    <p>
+                        Our mission is to empower businesses to build better products faster
+                        by providing reliable API infrastructure and expert guidance throughout
+                        the development lifecycle.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">APIs Deployed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime SLA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>// Example API Response
+{
+  "status": "success",
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "limit": 10,
+      "total": 100
+    }
+  },
+  "timestamp": "2024-01-01T00:00:00Z"
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In <span class="highlight">Touch</span></h2>
+                    <p>
+                        Ready to transform your API infrastructure? Let's discuss your project
+                        and see how we can help you build better APIs.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@apiservices.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Office</h4>
+                                <p>123 API Street, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Support Hours</h4>
+                                <p>24/7 for Enterprise clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="rest-api">REST API Development</option>
+                                <option value="graphql">GraphQL API</option>
+                                <option value="integration">API Integration</option>
+                                <option value="security">API Security</option>
+                                <option value="documentation">API Documentation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13"></path>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>API Services</h3>
+                    <p>Building the future of API infrastructure, one endpoint at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="GitHub">💻</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">REST API Development</a></li>
+                        <li><a href="#services">GraphQL APIs</a></li>
+                        <li><a href="#services">API Integration</a></li>
+                        <li><a href="#services">API Security</a></li>
+                        <li><a href="#services">API Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Developer Portal</a></li>
+                        <li><a href="#">Status Page</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 API Services. All rights reserved. Built with ❤️ for developers.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="Theme/scripts/main.js"></script>
 </body>
 </html>
