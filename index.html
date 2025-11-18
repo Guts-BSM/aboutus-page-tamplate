@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Services - Modern API Solutions</title>
-    <meta name="description" content="Professional API services for modern applications. Fast, reliable, and scalable API solutions.">
+    <title>API Club - University API Development Community</title>
+    <meta name="description" content="Join API Club at Mohamed Boudiaf University - M'sila. Learn API development, web technologies, and build amazing projects together.">
+    <meta name="keywords" content="API Club, Mohamed Boudiaf University, M'sila, programming, web development, API, JavaScript, Python">
+    <meta name="author" content="API Club - Mohamed Boudiaf University">
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="Theme/styles/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="API Club - University API Development Community">
+    <meta property="og:description" content="Join API Club at Mohamed Boudiaf University - M'sila. Learn API development and build amazing projects.">
+    <meta property="og:image" content="Theme/pics/logo.png">
+    <meta property="og:url" content="https://api-club.edu">
+    <meta property="og:type" content="website">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
-    <header class="header">
-        <nav class="nav-container">
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div class="logo-section">
-                <img src="Theme/pics/logo.png" alt="API Services Logo" class="logo">
-                <span class="logo-txt">API Services</span>
+                <img src="Theme/pics/logo.png" alt="API Club Logo" class="logo" loading="lazy">
+                <span class="logo-txt">API Club</span>
             </div>
 
             <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link active" role="menuitem" aria-current="page">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#activities" class="nav-link" role="menuitem">Activities</a></li>
+                    <li role="none"><a href="#team" class="nav-link" role="menuitem">Team</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
                 </ul>
 
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
             </div>
         </nav>
@@ -106,85 +127,147 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Our <span class="highlight">Services</span></h2>
-                <p>Comprehensive API solutions designed for modern businesses</p>
+                <h2>About <span class="highlight">API Club</span></h2>
+                <p>Empowering the next generation of developers at Mohamed Boudiaf University</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>REST API Development</h3>
-                    <p>Custom RESTful APIs built with modern standards and best practices.</p>
-                    <ul class="service-features">
-                        <li>RESTful design principles</li>
-                        <li>JSON API responses</li>
-                        <li>Rate limiting & throttling</li>
-                        <li>Comprehensive documentation</li>
-                    </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>
+                        API Club is a student-led organization dedicated to fostering innovation and excellence
+                        in API development and modern web technologies. We believe that through collaboration,
+                        learning, and hands-on projects, we can create a vibrant community of developers who
+                        are ready to tackle real-world challenges.
+                    </p>
+
+                    <h3>What We Do</h3>
+                    <p>
+                        Our club provides a platform for students to learn cutting-edge technologies, participate
+                        in exciting projects, and build lasting connections with fellow developers. From beginner
+                        workshops to advanced hackathons, we offer something for everyone passionate about technology.
+                    </p>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <h4>Excellence</h4>
+                            <p>Striving for the highest standards in everything we do</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <h4>Collaboration</h4>
+                            <p>Working together to achieve greater goals</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🚀</div>
+                            <h4>Innovation</h4>
+                            <p>Pushing boundaries and exploring new possibilities</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>GraphQL APIs</h3>
-                    <p>Flexible and efficient GraphQL APIs for complex data requirements.</p>
-                    <ul class="service-features">
-                        <li>Schema-driven development</li>
-                        <li>Real-time subscriptions</li>
-                        <li>Introspective queries</li>
-                        <li>Optimized data fetching</li>
-                    </ul>
+                <div class="about-visual">
+                    <div class="stats-cards">
+                        <div class="stats-card">
+                            <div class="stats-number">42</div>
+                            <div class="stats-label">Active Members</div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-number">15+</div>
+                            <div class="stats-label">Projects Completed</div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-number">8</div>
+                            <div class="stats-label">Workshops Hosted</div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-number">3</div>
+                            <div class="stats-label">Hackathons Won</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Activities</span></h2>
+                <p>Engage in exciting learning opportunities and hands-on experiences</p>
+            </div>
+
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">💻</div>
+                    <h3>Technical Workshops</h3>
+                    <p>Learn modern web technologies, API development, and best practices through interactive sessions.</p>
+                    <div class="activity-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">🔗</div>
-                    <h3>API Integration</h3>
-                    <p>Seamlessly connect your systems with third-party APIs and services.</p>
-                    <ul class="service-features">
-                        <li>Webhook integrations</li>
-                        <li>OAuth 2.0 implementation</li>
-                        <li>Error handling & retries</li>
-                        <li>Monitoring & logging</li>
-                    </ul>
+                <div class="activity-card">
+                    <div class="activity-icon">🚀</div>
+                    <h3>Hackathons</h3>
+                    <p>Participate in coding competitions and build innovative solutions under time constraints.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Competition</span>
+                        <span class="tag">Innovation</span>
+                        <span class="tag">Teamwork</span>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>API Analytics</h3>
-                    <p>Comprehensive analytics and monitoring for your API performance.</p>
-                    <ul class="service-features">
-                        <li>Real-time metrics</li>
-                        <li>Usage analytics</li>
-                        <li>Performance monitoring</li>
-                        <li>Error tracking</li>
-                    </ul>
+                <div class="activity-card">
+                    <div class="activity-icon">👥</div>
+                    <h3>Study Groups</h3>
+                    <p>Collaborate with peers to solve complex problems and learn from each other's experiences.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Collaboration</span>
+                        <span class="tag">Learning</span>
+                        <span class="tag">Support</span>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>API Security</h3>
-                    <p>Enterprise-grade security solutions to protect your APIs.</p>
-                    <ul class="service-features">
-                        <li>JWT authentication</li>
-                        <li>API key management</li>
-                        <li>Rate limiting</li>
-                        <li>Security audits</li>
-                    </ul>
+                <div class="activity-card">
+                    <div class="activity-icon">🎤</div>
+                    <h3>Guest Speakers</h3>
+                    <p>Hear from industry professionals and academics about the latest trends in technology.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Networking</span>
+                        <span class="tag">Industry</span>
+                        <span class="tag">Knowledge</span>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">📚</div>
-                    <h3>API Documentation</h3>
-                    <p>Professional documentation that developers love to use.</p>
-                    <ul class="service-features">
-                        <li>OpenAPI/Swagger specs</li>
-                        <li>Interactive documentation</li>
-                        <li>Code examples</li>
-                        <li>SDK generation</li>
-                    </ul>
+                <div class="activity-card">
+                    <div class="activity-icon">🛠️</div>
+                    <h3>Project Development</h3>
+                    <p>Work on real-world projects that solve actual problems and make a positive impact.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Projects</span>
+                        <span class="tag">Impact</span>
+                        <span class="tag">Experience</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🌐</div>
+                    <h3>Open Source</h3>
+                    <p>Contribute to open source projects and learn about collaborative software development.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Open Source</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Community</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,12 +344,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <p>Ready to join our community? We'd love to hear from you!</p>
+            </div>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>Get In <span class="highlight">Touch</span></h2>
+                    <h3>Contact Information</h3>
                     <p>
-                        Ready to transform your API infrastructure? Let's discuss your project
-                        and see how we can help you build better APIs.
+                        Whether you're interested in joining API Club, have questions about our activities,
+                        or want to collaborate on a project, we're here to help!
                     </p>
 
                     <div class="contact-details">
@@ -274,68 +362,87 @@
                             <div class="contact-icon">📧</div>
                             <div>
                                 <h4>Email</h4>
-                                <p>hello@apiservices.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
+                                <p>api.club@umb.edu.dz</p>
+                                <p class="contact-note">For general inquiries and membership</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <h4>Office</h4>
-                                <p>123 API Street, Tech City, TC 12345</p>
+                                <h4>Location</h4>
+                                <p>Faculty of Mathematics and Computer Science</p>
+                                <p>Mohamed Boudiaf University - M'sila</p>
                             </div>
                         </div>
 
                         <div class="contact-item">
                             <div class="contact-icon">🕒</div>
                             <div>
-                                <h4>Support Hours</h4>
-                                <p>24/7 for Enterprise clients</p>
+                                <h4>Meeting Times</h4>
+                                <p>Weekly meetings every Wednesday</p>
+                                <p>Workshop sessions on weekends</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                                    <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                                    <a href="#" class="social-link" aria-label="GitHub">💻</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" novalidate>
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <div class="error-message" id="name-error"></div>
                         </div>
 
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@student.umb.edu.dz" required>
+                            <div class="error-message" id="email-error"></div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Company Name">
+                            <label for="student-id">Student ID (Optional)</label>
+                            <input type="text" id="student-id" name="student-id" placeholder="e.g., 232335533311">
                         </div>
 
                         <div class="form-group">
-                            <select id="service" name="service" required>
-                                <option value="">Select Service</option>
-                                <option value="rest-api">REST API Development</option>
-                                <option value="graphql">GraphQL API</option>
-                                <option value="integration">API Integration</option>
-                                <option value="security">API Security</option>
-                                <option value="documentation">API Documentation</option>
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="membership">Club Membership</option>
+                                <option value="workshop">Workshop Information</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="partnership">Partnership Opportunities</option>
                                 <option value="other">Other</option>
                             </select>
+                            <div class="error-message" id="subject-error"></div>
                         </div>
 
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+                            <div class="error-message" id="message-error"></div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block">
-                            Send Message
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader" style="display: none;">
+                                <div class="spinner"></div>
+                            </div>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 2L11 13"></path>
                                 <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
@@ -403,6 +510,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="Theme/scripts/main.js"></script>
+    <script src="Theme/scripts/main.js" defer></script>
 </body>
 </html>
